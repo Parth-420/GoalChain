@@ -26,10 +26,16 @@ goalchain/
 │   └── Anchor.toml
 │
 └── ui/          # Next.js frontend application
-    ├── public/
-    ├── src/
-    ├── package.json
-    └── next.config.js
+    ├── app/              # App router pages and layouts
+    ├── components/       # Reusable UI components
+    ├── hooks/            # Custom React hooks
+    ├── lib/              # Utility functions and libraries
+    ├── public/           # Static assets
+    ├── components.json   # UI component configuration
+    ├── next.config.js    # Next.js configuration
+    ├── package.json      # Dependencies and scripts
+    ├── tailwind.config.ts # Tailwind CSS configuration
+    └── tsconfig.json     # TypeScript configuration
 ```
 
 ---
@@ -106,5 +112,5 @@ This integration is not complete yet, and further updates will be provided as th
 
 ---
 
-## �� Contributing
+## 🤝 Contributing
 Contributions are welcome! If you have ideas, improvements, or bug fixes, please open an issue or submit a pull request. Collaborative efforts are appreciated to enhance the functionality and user experience of GoalChain.
