@@ -360,7 +360,7 @@ export default function Home() {
                       <label htmlFor="subject" className="text-sm font-medium">
                         Subject
                       </label>
-                      <Input id="subject" placeholder="What's this about?" />
+                      <Input  id="subject" placeholder="What's this about?" />
                     </div>
                     
                     <div className="space-y-2">
