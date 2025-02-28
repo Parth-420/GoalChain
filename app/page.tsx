@@ -320,15 +320,15 @@ export default function Home() {
                   <div className="mt-8">
                     <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
                     <div className="flex space-x-4">
-                      <Link href="https://github.com/goalchain" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>
                       </Link>
-                      <Link href="https://linkedin.com/company/goalchain" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Linkedin className="h-5 w-5" />
                         <span className="sr-only">LinkedIn</span>
                       </Link>
-                      <Link href="https://twitter.com/goalchain" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Twitter className="h-5 w-5" />
                         <span className="sr-only">Twitter</span>
                       </Link>
@@ -393,15 +393,15 @@ export default function Home() {
               <span className="font-bold text-xl">GoalChain</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Link href="https://github.com/goalchain" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com/company/goalchain" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://twitter.com/goalchain" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
