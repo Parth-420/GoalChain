@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Header } from '@/components/header';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Target, Shield, TrendingUp, Award, Mail, MessageSquare, HelpCircle, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Target, Shield, TrendingUp, Award, Mail, MessageSquare, HelpCircle, Github, Linkedin, Twitter, Users, CheckCircle2, UserPlus, Sparkles } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -125,6 +125,96 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Upcoming Features Section */}
+        <section id="upcoming-features" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/20">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Coming Soon</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                We're constantly improving GoalChain with new features to help you achieve more.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="bg-card/50 backdrop-blur-sm rounded-xl p-8 border border-border/50 hover:border-primary/30 transition-colors">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-chart-1/10 p-3 rounded-lg">
+                    <Users className="h-8 w-8 text-chart-1" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Community Challenges & Rewards</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Join group challenges with other members, pool rewards, and celebrate achievements together. Community challenges increase motivation and create a supportive environment for goal completion.
+                    </p>
+                    <div className="flex items-center space-x-2 text-sm text-primary">
+                      <Sparkles className="h-4 w-4" />
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card/50 backdrop-blur-sm rounded-xl p-8 border border-border/50 hover:border-primary/30 transition-colors">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-chart-2/10 p-3 rounded-lg">
+                    <CheckCircle2 className="h-8 w-8 text-chart-2" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Community-Based Verification</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Leverage the power of community to verify goal completion. Trusted members can validate your progress, adding an extra layer of accountability and credibility to your achievements.
+                    </p>
+                    <div className="flex items-center space-x-2 text-sm text-primary">
+                      <Sparkles className="h-4 w-4" />
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card/50 backdrop-blur-sm rounded-xl p-8 border border-border/50 hover:border-primary/30 transition-colors">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-chart-3/10 p-3 rounded-lg">
+                    <UserPlus className="h-8 w-8 text-chart-3" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Accountability Partners</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Connect with accountability partners who share similar goals. Regular check-ins, shared progress tracking, and mutual encouragement significantly increase your chances of success.
+                    </p>
+                    <div className="flex items-center space-x-2 text-sm text-primary">
+                      <Sparkles className="h-4 w-4" />
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card/50 backdrop-blur-sm rounded-xl p-8 border border-border/50 hover:border-primary/30 transition-colors">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-chart-4/10 p-3 rounded-lg">
+                    <Award className="h-8 w-8 text-chart-4" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Enhanced Reward System</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Earn achievement badges, unlock special rewards, and gain reputation within the community. Our enhanced reward system will provide additional motivation beyond financial incentives.
+                    </p>
+                    <div className="flex items-center space-x-2 text-sm text-primary">
+                      <Sparkles className="h-4 w-4" />
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-16 text-center">
+              
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section id="faq" className="py-20 px-4 bg-secondary/20">
           <div className="container mx-auto max-w-4xl">
@@ -150,7 +240,7 @@ export default function Home() {
                   How is goal completion verified?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  GoalChain uses a combination of self-reporting and optional verification methods. You can log your progress regularly, and for certain goals, you can connect external data sources or invite accountability partners to verify your progress. The blockchain ensures all progress data is transparent and immutable.
+                GoalChain currently uses self-reporting for goal completion but we are working on adding community-based verification and accountability partners soon in the future. You can log your progress regularly. The blockchain ensures all progress data is transparent and immutable.
                 </AccordionContent>
               </AccordionItem>
               
@@ -186,8 +276,7 @@ export default function Home() {
                   What happens if I miss my deadline?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  If you miss your deadline without completing the goal, it will be marked as failed. The outcome for your staked funds depends on the rules you set when creating the goal. You can choose to have the funds donated to charity, redistributed to accountability partners, or other options.
-                </AccordionContent>
+                If you miss your deadline without completing the goal, it will be marked as failed but for now we will allow you to withdraw but in the future ,You can choose to have the funds redistributed to accountability partners,community projects or other options.                </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
