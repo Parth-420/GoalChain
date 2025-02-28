@@ -320,15 +320,15 @@ export default function Home() {
                   <div className="mt-8">
                     <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
                     <div className="flex space-x-4">
-                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="https://github.com/Parth-420/GoalChain" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>
                       </Link>
-                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="https://www.linkedin.com/in/parth-gupta-0b8417166/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Linkedin className="h-5 w-5" />
                         <span className="sr-only">LinkedIn</span>
                       </Link>
-                      <Link href="/" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
+                      <Link href="https://x.com/parthh_07" className="bg-card hover:bg-secondary transition-colors p-3 rounded-full">
                         <Twitter className="h-5 w-5" />
                         <span className="sr-only">Twitter</span>
                       </Link>
@@ -393,18 +393,7 @@ export default function Home() {
               <span className="font-bold text-xl">GoalChain</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
+              
               <span className="text-sm text-muted-foreground ml-2">
                 © {new Date().getFullYear()} GoalChain. All rights reserved.
               </span>
