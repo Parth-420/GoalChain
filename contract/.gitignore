@@ -1,4 +1,16 @@
-node_modules
-migrations
-app
-target
+# Node.js
+/node_modules/
+/migrations/
+
+# Rust/Anchor
+/target/
+/app/
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Anchor specific
+.anchor/
+test-ledger/
