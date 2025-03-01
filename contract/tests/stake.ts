@@ -37,7 +37,7 @@ describe('goal_tracker', () => {
         user: user.publicKey, 
         systemProgram: anchor.web3.SystemProgram.programId, 
       })
-      .rpc(); /
+      .rpc(); 
 
     // Fetch the created Task account to verify its state
     const taskAccount = await program.account.task.fetch(taskPDA);
@@ -85,5 +85,6 @@ describe('goal_tracker', () => {
       assert.fail('Task account should be closed'); 
     } catch (err) {
       assert.ok(err, 'Expected account to be closed'); 
+    }
   });
 });
