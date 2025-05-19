@@ -1,12 +1,12 @@
 "use client";
 
 import { FC, ReactNode, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import { ConnectionProvider, WalletProvider as SolanaWalletProvider } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { PhantomWalletAdapter, SolflareWalletAdapter, LedgerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
-import dynamic from 'next/dynamic';
 
 // Import the styles for the wallet adapter
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -31,7 +31,7 @@ const WalletProviderWithNoSSR: FC<WalletProviderProps> = ({ children }) => {
       new SolflareWalletAdapter(),
       new LedgerWalletAdapter(),
     ],
-    [network]
+    []
   );
 
   return (
